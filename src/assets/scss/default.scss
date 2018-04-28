@@ -1,0 +1,72 @@
+$mainTextColor: black; /* #007bff */
+$ligneColor: #2c3e50;
+
+.header .top {
+    margin: 15px 0;
+}
+
+.header .top .nomPrenom a {
+    font-size: 30px;
+    font-weight: 700;
+    vertical-align: middle;
+    color: $mainTextColor;
+    outline: 0;
+}
+
+.header .top .nomPrenom a:hover, a:active, a:visited, a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+
+
+
+/* menu */
+.menu {
+	border-top: 1px dashed $ligneColor;
+    border-bottom: 1px dashed $ligneColor;
+}
+
+.menu ul {
+	padding: 0;
+}
+
+.menu .itemMenu {
+	display: inline-block;
+	margin: 15px 20px;
+}
+
+.menu .itemMenu * {
+    outline: none;
+    text-decoration: none;
+    color: $mainTextColor;
+}
+
+.menu .itemMenu a:hover {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.menu .itemMenu .active {
+	font-weight: bold;
+}
+
+
+
+/* page */
+.container {
+    padding-bottom: 30px;
+}
+
+img.imgResized {
+    max-height: 150px;
+    width: auto;
+}
+
+
+
+/* footer */
+.footer {
+    margin: 15px 0;
+    padding-top: 10px;
+    border-top: 1px dashed $ligneColor;
+}

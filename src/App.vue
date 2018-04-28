@@ -1,28 +1,75 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="container">
+      <div class="row">
+        <header class="col-lg-12 header">
+          <div class="top text-center">
+
+            <div class="row">
+              <div class="col-lg-12">
+                <router-link :to="{ name: 'index' }"><img src="@/assets/logo.png" alt=""/></router-link>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12">
+                <h1 class="nomPrenom"><router-link :to="{ name: 'index' }">{{ config.APP_NAME }}</router-link></h1>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row">
+            <nav class="menu" role="navigation">
+              <div class="text-center">
+                <div class="itemMenu">
+                  <router-link v-bind:class="{ 'active': this.$route.name == 'Activites' || this.$route.name == 'Activite' }" :to="{ name: 'Activites' }">Activités</router-link>
+                </div>
+                <div class="itemMenu">
+                  <router-link v-bind:class="{ 'active': this.$route.name == 'Situations' || this.$route.name == 'Situation' }" :to="{ name: 'Situations' }">Situations</router-link>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+        </header>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 page">
+          <transition name="fade">
+            <router-view></router-view>
+          </transition>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 footer text-center">
+          <strong>Développé par <a target="_blank" href="https://github.com/fjourdren/">Flavien JOURDREN</a></strong>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import config from '../config'
 
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
+  name: 'App',
+  data: function () {
+    return {
+      config: config
+    }
+  },
+  beforeCreate: function () {
+    document.title = config.APP_NAME
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+  @import 'src/assets/scss/design.scss';
 </style>

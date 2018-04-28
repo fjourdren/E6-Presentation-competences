@@ -1,0 +1,33 @@
+/* Mobile */
+@media (min-width: 0px) and (max-width: 550px) {
+    body {
+        background-color: #fff;
+        background-image: none !important;
+    }
+
+    .container {
+        margin: 0;
+        opacity: 1;
+        width: 100%;
+        box-shadow: none;
+	    border: none;
+    }
+}
+
+
+/* Phablet */
+@media (min-width: 550px) and (max-width: 750px) {
+    
+}
+
+
+/* Tablette */
+@media (min-width: 750px) and (max-width: 1000px) {
+    
+}
+
+
+/* Entre Tablette et pc */
+@media (min-width: 1000px) and (max-width: 1300px) {
+    
+}
