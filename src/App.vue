@@ -45,7 +45,7 @@
 
       <div class="row">
         <div class="col-lg-12 footer text-center">
-          <strong>Développé par <a target="_blank" href="https://github.com/fjourdren/">Flavien JOURDREN</a></strong>
+          <strong>Développé par <a target="_blank" href="https://github.com/fjourdren/">Flavien JOURDREN</a> - <a target="_blank" href="https://github.com/fjourdren/E6-Presentation-competences">Projet Github</a></strong>
         </div>
       </div>
 

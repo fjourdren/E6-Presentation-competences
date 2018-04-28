@@ -1,0 +1,2 @@
+Projet destiné à prouver l'acquis des compétences pour l'épreuve E6 du BTS SIO. Le projet se présente sous la forme d'une interface web, celle-ci développé sous VueJS.
+Le logiciel ne possède aucune base de donnée (le fichier "data.json" contient les informations à afficher).
