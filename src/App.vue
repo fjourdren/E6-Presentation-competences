@@ -28,6 +28,9 @@
                 <div class="itemMenu">
                   <router-link v-bind:class="{ 'active': this.$route.name == 'Situations' || this.$route.name == 'Situation' }" :to="{ name: 'Situations' }">Situations</router-link>
                 </div>
+                <div class="itemMenu">
+                  <a target="_blank" href="synthese.pdf">Tableau de Synthèse</a>
+                </div>
               </div>
             </nav>
           </div>
