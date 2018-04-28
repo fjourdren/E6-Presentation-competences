@@ -5,7 +5,17 @@
     <div v-else>
       <h1 class="text-center"><u>{{ situation.name }}</u></h1>
       <img v-if="situation.image" :src="situation.image" class="center-block imgResized" alt=""/>
-      <p v-if="situation.description">Description : {{ situation.description }}</p>
+      <div v-if="situation.date">
+        <u>Date de réalisation</u> : <div v-html="situation.date"></div>
+      </div>
+      <div v-if="situation.context">
+        <u>Contexte de la situation</u> : <div v-html="situation.context"></div>
+      </div>
+      <div v-if="situation.condition">
+        <u>Condition de réalisation</u> : <div v-html="situation.condition"></div>
+      </div>
+
+      <hr/>
 
       <ActivitesList :activites="activites"/>
 

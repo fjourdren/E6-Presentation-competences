@@ -1,8 +1,10 @@
 <template>
-  <tr class="miniActivite">
-    <td v-if="nbPreuve > 0"><router-link :to="{ name: 'Activite', params: { activiteId: activite.id }}">{{ activite.name }}</router-link></td>
-    <td v-else>{{ activite.name }}</td>
-  </tr>
+  <transition name="fade-left">
+    <tr class="miniActivite">
+      <td v-if="nbPreuve > 0"><router-link :to="{ name: 'Activite', params: { activiteId: activite.id }}">{{ activite.name }}</router-link></td>
+      <td v-else>{{ activite.name }}</td>
+    </tr>
+  </transition>
 </template>
 
 <script>

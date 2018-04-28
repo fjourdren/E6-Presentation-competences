@@ -70,3 +70,104 @@ img.imgResized {
     padding-top: 10px;
     border-top: 1px dashed $ligneColor;
 }
+
+
+
+/* animations */
+/* left */
+.fade-left-enter-active {
+    animation: 1s ease 0s 1 fadeLeft;
+}
+
+@keyframes fadeLeft {
+    0% {
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+.fade-left-leave {
+    animation: 1s ease 0s 1 fadeLeftLeave;
+}
+
+@keyframes fadeLeftLeave {
+    0% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+    100% {
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+}
+
+
+/* right */
+.fade-right-enter-active {
+    animation: 1s ease 0s 1 fadeRight;
+}
+
+@keyframes fadeRight {
+    0% {
+        transform: translateX(40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+.fade-right-leave {
+    animation: 1s ease 0s 1 fadeRightLeave;
+}
+
+@keyframes fadeRightLeave {
+    0% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+    100% {
+        transform: translateX(40px);
+        opacity: 0;
+    }
+}
+
+/* fade */
+.fade-enter-active {
+    animation: 1.2s ease 0s 1 fade;
+}
+
+.fadeCV-enter-active {
+    animation: 1.5s ease 0s 1 fade;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.fade-leave {
+    animation: 1.2s ease 0s 1 fadeLeave;
+}
+
+.fadeCV-leave {
+    animation: 1.5s ease 0s 1 fadeLeave;
+}
+
+@keyframes fadeLeave {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}

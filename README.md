@@ -15,8 +15,9 @@ Le logiciel ne possède aucune base de données (le fichier "data.json" contient
 ## TODO
 - [x] Créer un README.md
 - [x] Tableau de synthèse
-- [ ] Plus d'informations sur chaque situation
-- [ ] Ajout d'animations
+- [x] Ajout d'animations
+- [x] Plus d'informations sur chaque situation
+- [ ] Ajout d'un dockerfile
 - [ ] Captures d'écran dans le REAME.md
 - [ ] Ajout schéma des données
 - [ ] Ajout d'un système qui permettra de générer le tableau de synthèse
