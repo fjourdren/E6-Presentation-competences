@@ -32,6 +32,9 @@
                   <div class="itemMenu">
                     <a target="_blank" href="synthese.pdf">Tableau de Synthèse</a>
                   </div>
+                  <div class="itemMenu">
+                    <a target="_blank" href="cv.pdf">Curriculum Vitae</a>
+                  </div>
                 </div>
               </nav>
             </div>
