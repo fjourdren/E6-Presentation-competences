@@ -1,9 +1,9 @@
 <template>
   <div class="activite">
     <Chargement v-if="activite === null"/>
-    <h1 v-else-if="activite === -1">Erreur</h1>
+    <h2 v-else-if="activite === -1">Erreur</h2>
     <div v-else>
-      <h1 class="text-center"><u>{{ activite.name }}</u></h1>
+      <h2 class="text-center"><u>{{ activite.name }}</u></h2>
 
       <SituationsList :situations="situations"/>
 

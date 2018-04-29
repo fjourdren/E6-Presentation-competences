@@ -10,7 +10,6 @@
                     <tr>
                         <td scope="col">#</td>
                         <td scope="col">Nom</td>
-                        <td scope="col">Description</td>
                     </tr>
                     </thead>
                     <tbody v-for="situation in filteredSituations" v-bind:key="situation.id">

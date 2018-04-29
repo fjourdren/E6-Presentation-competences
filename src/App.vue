@@ -18,6 +18,12 @@
                 </div>
               </div>
 
+              <div v-if="data.option" class="row">
+                <div class="col-lg-12">
+                  <h4>BTS SIO Option {{ data.option }}</h4>
+                </div>
+              </div>
+
             </div>
 
             <div class="row">
@@ -66,12 +72,14 @@
 
 <script>
 import config from '../config'
+import data from './data.json'
 
 export default {
   name: 'App',
   data: function () {
     return {
-      config: config
+      config: config,
+      data: data
     }
   },
   beforeCreate: function () {
